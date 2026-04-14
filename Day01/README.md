@@ -36,3 +36,13 @@ module and_gate (
 assign y = a & b;
 endmodule
 ```
+---
+
+## Contents of Day01
+
+1.HALF ADDER  
+2.FULL ADDER  
+3.PARAMATERIZED ADDER  
+
+For day 1 we will learn about these 3 types of adders.
+
