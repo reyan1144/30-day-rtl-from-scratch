@@ -1,37 +1,41 @@
-`timescale 1ns/1ps
+`timescale 1ns/1ps   // Time unit = 1ns, precision = 1ps
 
-// Testbench for Half Adder with waveform dumping
-
+// Testbench for Half Adder
 module tb_half_adder;
 
-    // Inputs
-    reg a;
-    reg b;
+    // Declare inputs as reg (driven by testbench)
+    reg A;
+    reg B;
 
-    // Outputs
-    wire sum;
-    wire carry;
+    // Declare outputs as wire (driven by DUT)
+    wire SUM;
+    wire CARRY;
 
-    // Instantiate DUT (Device Under Test)
+    // Instantiate the DUT (Device Under Test)
     half_adder uut (
-        .a(a),
-        .b(b),
-        .sum(sum),
-        .carry(carry)
+        .A(A),
+        .B(B),
+        .SUM(SUM),
+        .CARRY(CARRY)
     );
 
+    // Dump waveform for viewing in EDA PLAYGROUND(IF U ARE USING VIVADO NO NEED OF BELOW 2 LINES)
     initial begin
-        // Dump file for waveform viewing if u are running your code in eda playground use below two lines otherwise remove that
-        $dumpfile("half_adder.vcd");   // VCD file name
-        $dumpvars(0, tb_half_adder);   // Dump all variables
+        $dumpfile("wave.vcd");   // Output VCD file
+        $dumpvars;               // Dump all variables
+    end
 
-        // Apply test vectors
-        a = 0; b = 0; #10;
-        a = 0; b = 1; #10;
-        a = 1; b = 0; #10;
-        a = 1; b = 1; #10;
+    // Apply test vectors
+    initial begin
 
-        // End simulation
+        // Apply all input combinations
+        A = 0; B = 0; #10;   // 0 + 0
+        A = 0; B = 1; #10;   // 0 + 1
+        A = 1; B = 0; #10;   // 1 + 0
+        A = 1; B = 1; #10;   // 1 + 1
+
+        // Wait and finish simulation
+        #10;
         $finish;
     end
 
