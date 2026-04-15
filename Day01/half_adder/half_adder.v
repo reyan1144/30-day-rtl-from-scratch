@@ -1,18 +1,17 @@
 // Half Adder Module
-// Performs addition of two 1-bit inputs
-// Output: sum and carry
+// Adds two 1-bit inputs and produces sum and carry
 
 module half_adder(
-    input a,        // First input bit
-    input b,        // Second input bit
-    output sum,     // Sum output (XOR of inputs)
-    output carry    // Carry output (AND of inputs)
+    input A,        // First input bit
+    input B,        // Second input bit
+    output SUM,     // Sum output (A XOR B)
+    output CARRY    // Carry output (A AND B)
 );
 
-// Sum is XOR of inputs
-assign sum = a ^ b;
+// Sum is generated using XOR operation
+assign SUM = A ^ B;
 
-// Carry is AND of inputs
-assign carry = a & b;
+// Carry is generated using AND operation
+assign CARRY = A & B;
 
 endmodule
