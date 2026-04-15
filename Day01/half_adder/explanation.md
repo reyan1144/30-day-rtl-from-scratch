@@ -47,3 +47,34 @@ Understanding half adder is important because it forms the foundation for:
 - Full adders
 - Ripple carry adders
 - Arithmetic logic units (ALUs)
+
+  ---
+
+  ## Simulation Waveform  
+
+
+  <img width="1892" height="275" alt="Image" src="https://github.com/user-attachments/assets/2cf8ede0-b54d-4d05-ba39-39c81cc3c9f0" />
+
+  ## Waveform Explanation
+
+The waveform shows the behavior of the half adder for all input combinations of A and B.
+
+- When A = 0 and B = 0  
+  → SUM = 0, CARRY = 0  
+
+- When A = 0 and B = 1  
+  → SUM = 1, CARRY = 0  
+
+- When A = 1 and B = 0  
+  → SUM = 1, CARRY = 0  
+
+- When A = 1 and B = 1  
+  → SUM = 0, CARRY = 1  
+
+---
+
+## Observation
+
+- SUM follows XOR behavior (1 when inputs are different)
+- CARRY follows AND behavior (1 only when both inputs are 1)
+- Outputs match the expected truth table  
