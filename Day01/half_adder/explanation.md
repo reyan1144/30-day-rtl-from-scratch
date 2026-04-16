@@ -53,7 +53,7 @@ Understanding half adder is important because it forms the foundation for:
   ## Simulation Waveform  
 
 
-  <img width="1892" height="275" alt="Image" src="https://github.com/user-attachments/assets/2cf8ede0-b54d-4d05-ba39-39c81cc3c9f0" />
+<img width="1909" height="165" alt="Image" src="https://github.com/user-attachments/assets/61ffe36f-4e31-4c10-a84e-4741a013f8a6" />
 
   ## Waveform Explanation
 
