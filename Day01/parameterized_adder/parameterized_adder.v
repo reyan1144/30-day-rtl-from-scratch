@@ -4,7 +4,7 @@
 // Adds two N-bit inputs (WIDTH can be changed)
 // Produces N-bit SUM and 1-bit carry-out
 
-module parameterized_adder #(parameter WIDTH = 16)
+module parameterized_adder #(parameter WIDTH = 4)
 (
     input  [WIDTH-1:0] A,   // First input operand (N-bit)
     input  [WIDTH-1:0] B,   // Second input operand (N-bit)
