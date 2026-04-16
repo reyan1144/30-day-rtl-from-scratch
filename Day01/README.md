@@ -38,11 +38,37 @@ endmodule
 ```
 ---
 
-## Contents of Day01
+## Modules Implemented
 
-1.HALF ADDER  
-2.FULL ADDER  
-3.PARAMATERIZED ADDER  
+### 1. Half Adder
+- Adds two 1-bit inputs  
+- Outputs: Sum and Carry  
 
-For day 1 we will learn about these 3 types of adders.
+### 2. Full Adder
+- Adds three inputs (including carry-in)  
+- Outputs: Sum and Carry-out  
+
+### 3. Parameterized Adder
+- Adds multi-bit inputs  
+- Uses parameter for flexible bit-width  
+
+---
+
+## What This Day Demonstrates
+
+- Basic RTL coding using Verilog  
+- Writing clean combinational logic  
+- Understanding of carry propagation  
+- Writing testbenches and verifying using waveforms  
+- Handling overflow conditions  
+
+---
+
+## Folder Structure
+
+Each module contains:
+- Verilog design file  
+- Testbench  
+- Explanation with waveform  
+
 
