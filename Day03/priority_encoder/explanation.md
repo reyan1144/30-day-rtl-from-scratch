@@ -10,7 +10,7 @@ If multiple inputs are high, the highest-order input (MSB) is given priority.
 
 ## Logic
 
-- i[7] has highest priority  
+- i[7] has highest priority  (See Code)  
 - i[0] has lowest priority  
 
 Encoding:
