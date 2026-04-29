@@ -45,7 +45,7 @@ endcase
 ---
 
 
-## Observation
+## Observation from Waveform
 
 - Output changes immediately with change in shift value  
 - All shift cases are correctly implemented  
