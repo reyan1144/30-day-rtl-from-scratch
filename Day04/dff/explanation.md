@@ -35,7 +35,7 @@ The output updates only on the clock edge, making it a basic memory element in d
 
 ---
 
-## Observation
+## Observation from Waveform
 
 - Output changes only on clock edge (sequential behavior)  
 - Synchronous reset affects output only during clock edge  
